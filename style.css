@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --mainColor: rgb(186, 73, 73);
+}
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--mainColor);
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+/* End Global Rules */
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: min(90%, 500px);
+  padding: 4rem 2rem;
+  background-color: #1b1b1b;
+  border-radius: 0.5rem;
+}
+
+/* Tabs Section */
+.container .sec-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.container .sec-tabs .tab {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #3e3f43;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container .sec-tabs .active {
+  background-color: var(--mainColor);
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Time & Btns Section */
+.container .sec-time-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.container .sec-time-btns #time {
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.container .sec-time-btns .btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btns-container #btn-start,
+.btns-container #btn-pause {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: var(--mainColor);
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  border-radius: 0.5rem;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btns-container #btn-reset {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  background-color: #1b1b1bc0;
+  margin: 1rem auto 0;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.copyright i {
+  color: var(--mainColor);
+}

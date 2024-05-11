@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="sec-tabs">
+        <button id="focus" class="tab active">Focus</button>
+        <button id="short-break" class="tab">Short Break</button>
+        <button id="long-break" class="tab">Long Break</button>
+      </section>
+
+      <section class="sec-time-btns">
+        <span id="time"></span>
+        <div class="btns-container">
+          <button id="btn-start" class="show">Start</button>
+          <button id="btn-pause" class="hide">Pause</button>
+          <button id="btn-reset" class="hide">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+    <section class="copyright">
+      <span
+        >Made with <i class="fa-solid fa-heart"></i> by Abdulrahman Zaki <br />
+        <em>Version 0.2</em></span
+      >
+    </section>
+    <audio id="click" src="audio/click.wav" preload="auto"></audio>
+    <audio id="focus-end" src="audio/focus-end.mp3" preload="auto"></audio>
+    <audio
+      id="short-break-end"
+      src="audio/shortbreak-end.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="long-break-end"
+      src="audio/longbreak-end.mp3"
+      preload="auto"
+    ></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
